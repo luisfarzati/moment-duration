@@ -1,10 +1,10 @@
 {
-  "name": "moment-interval",
-  "description": "ISO 8601 duration and time interval support for Moment.js",
+  "name": "moment-duration",
+  "description": "ISO 8601 duration support for Moment.js",
   "author": "Luis Farzati <lfarzati@gmail.com>",
-  "homepage": "https://github.com/luisfarzati/moment-interval",
-  "bugs": "https://github.com/luisfarzati/moment-interval/issues",
-  "version": "0.0.4",
+  "homepage": "https://github.com/luisfarzati/moment-duration",
+  "bugs": "https://github.com/luisfarzati/moment-duration/issues",
+  "version": "0.0.5",
   "engines": {
     "node": "*"
   },
@@ -16,10 +16,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git@github.com/luisfarzati/moment-interval.git"
+    "url": "https://git@github.com/luisfarzati/moment-duration.git"
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/luisfarzati/moment-interval/blob/master/LICENSE"
+    "url": "https://github.com/luisfarzati/moment-duration/blob/master/LICENSE"
   }
 }
