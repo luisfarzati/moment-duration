@@ -22,14 +22,14 @@
     }
 
     return 'P' +
-        append(this.weeks(), 'W') +
-        append(this.years(), 'Y') +
-        append(this.months(), 'M') +
-        append(this.days(), 'D') +
-        ((this.hours() + this.minutes() + this.seconds() + this.milliseconds() > 0) ? 'T' : '') +
-        append(this.hours(), 'H') +
-        append(this.minutes(), 'M') +
-        append(this.seconds(), 'S') +
-        append(this.milliseconds(), 'Z');
+        (this.days() % 7 !== 0 ? '' : append(Math.abs(this.weeks()), 'W')) +
+        append(Math.abs(this.years()), 'Y') +
+        append(Math.abs(this.months()), 'M') +
+        (this.days() % 7 === 0 ? '' : append(Math.abs(this.days()), 'D')) +
+        ((Math.abs(this.hours()) + Math.abs(this.minutes()) + Math.abs(this.seconds()) + Math.abs(this.milliseconds()) > 0) ? 'T' : '') +
+        append(Math.abs(this.hours()), 'H') +
+        append(Math.abs(this.minutes()), 'M') +
+        append(Math.abs(this.seconds()), 'S') +
+        append(Math.abs(this.milliseconds()), 'Z');
   };
 }(this));
